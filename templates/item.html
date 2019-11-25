@@ -1,7 +1,7 @@
 <div class="card white p-5 mt-5">
 	<div class="center-align black">
 		<img ng-if="i.hi" ng-src="assets/images/{{i.id}}.jpg" class="item-image">
-		<h4 class="white-text p-6">No Image Preview</h4>
+		<h4 ng-if="!i.hi" class="white-text p-6">No Image Preview</h4>
 	</div>
 
 	<div class="my-2">&nbsp;</div>
