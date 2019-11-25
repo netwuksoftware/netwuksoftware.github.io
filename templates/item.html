@@ -1,6 +1,7 @@
 <div class="card white p-5 mt-5">
 	<div class="center-align black">
-		<img ng-src="assets/images/{{i.id}}.jpg" class="item-image">
+		<img ng-if="i.hi" ng-src="assets/images/{{i.id}}.jpg" class="item-image">
+		<h4 class="white-text p-6">No Image Preview</h4>
 	</div>
 
 	<div class="my-2">&nbsp;</div>
@@ -9,6 +10,12 @@
 		<div class="col s8">
 			<h5 class="mb-3 ml-4">{{i.name}}</h5>
 			<h6 class="grey-text ml-4">{{i.desc}}</h6>
+
+			<div class="ml-4">
+				<div ng-repeat="tag in i.tech" class="chip my-5">
+					{{tag}}
+				</div>
+			</div>
 		</div>
 
 		<div class="col s4">

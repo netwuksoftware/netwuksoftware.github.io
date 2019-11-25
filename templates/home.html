@@ -15,6 +15,10 @@
 				<h5 class="mt-4 mb-2">{{i.name}}</h5>
 				<h6 class="grey-text mt-3">{{i.desc}}</h6>
 
+				<div ng-repeat="tag in i.tech" class="chip my-5">
+					{{tag}}
+				</div>
+
 				<p class="absolute pin-b mb-5">
 					<button ng-click="openItem(i.id)" class="btn blue darken-2 mx-3"><i class="material-icons left">visibility</i>View</button>
 					<a target="_blank" ng-href="https://buy.paddle.com/product/{{i.pay}}" class="btn red lighten-1"><i class="material-icons left">shopping_cart</i>Buy for {{i.amt}}</a>
