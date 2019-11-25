@@ -11,6 +11,9 @@
 			<h5 class="mb-3 ml-4">{{i.name}}</h5>
 			<h6 class="grey-text ml-4">{{i.desc}}</h6>
 
+			<h5 class="my-4 ml-4">Features & Contents:</h5>
+			<h6 ng-repeat="f in i.feat" class="grey-text ml-4">- {{f}}</h6>
+
 			<div class="ml-4">
 				<div ng-repeat="tag in i.tech" class="chip my-5">
 					{{tag}}
@@ -19,7 +22,7 @@
 		</div>
 
 		<div class="col s4">
-			<a target="_blank" ng-href="https://buy.paddle.com/product/{{i.pay}}" class="btn-large red lighten-1 float-right"><i class="material-icons left">shopping_cart</i>Buy for {{i.amt}}</a>
+			<a ng-click="confirmBuy(i.pay, i.name, i.amt)" class="btn-large red lighten-1 float-right"><i class="material-icons left">shopping_cart</i>Buy for {{i.amt}}</a>
 		</div>
 	</div>
 </div>

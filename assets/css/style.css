@@ -23,7 +23,7 @@ main {
 }
 
 .item-row .thumb {
-	min-height: 240px;
+	min-height: 320px;
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;

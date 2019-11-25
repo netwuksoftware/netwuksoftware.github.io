@@ -15,13 +15,16 @@
 				<h5 class="mt-4 mb-2">{{i.name}}</h5>
 				<h6 class="grey-text mt-3">{{i.desc}}</h6>
 
+				<h5 class="my-4">Features & Contents:</h5>
+				<h6 ng-repeat="f in i.feat" class="grey-text">- {{f}}</h6>
+
 				<div ng-repeat="tag in i.tech" class="chip my-5">
 					{{tag}}
 				</div>
 
 				<p class="absolute pin-b mb-5">
 					<button ng-click="openItem(i.id)" class="btn blue darken-2 mx-3"><i class="material-icons left">visibility</i>View</button>
-					<a target="_blank" ng-href="https://buy.paddle.com/product/{{i.pay}}" class="btn red lighten-1"><i class="material-icons left">shopping_cart</i>Buy for {{i.amt}}</a>
+					<a ng-click="confirmBuy(i.pay, i.name, i.amt)" class="btn red lighten-1"><i class="material-icons left">shopping_cart</i>Buy for {{i.amt}}</a>
 				</p>
 			</div>
 		</div>
