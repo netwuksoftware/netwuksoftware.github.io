@@ -6,31 +6,43 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="assets/css/materialize.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="assets/css/tailwind.css" media="screen,projection" />
 	<link type="text/css" rel="stylesheet" href="assets/css/style.css" />
 
 	<script type="text/javascript" src="assets/js/angular.js"></script>
 	<script type="text/javascript" src="assets/js/angular-route.js"></script>
 </head>
 
-<body ng-app="myApp">
-	<nav class="blue-grey darken-2">
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">Netwuk</a>
-			
-			<form>
-				<div class="input-field">
-					<input id="search" type="search" required>
-					<label class="label-icon" for="search"><i class="material-icons">search</i></label>
-					<i class="material-icons">close</i>
-				</div>
-			</form>
+<body ng-app="myApp" class="blue-grey lighten-5">
+	<header>
+		<nav class="blue-grey darken-2">
+			<div class="nav-wrapper">
+				<a href="/" class="brand-logo center">Netwuk Software</a>
+			</div>
+		</nav>
+	</header>
+	
+	<main>
+		<ng-view></ng-view>
+	</main>
+	
+	<footer class="page-footer blue-grey darken-1">
+		<div class="container mb-4">
+			Netwuk Software - We provide Utility software and programming source code for education.
+			<br>
+			<br>
+			Contact - desipixels@gmail.com
 		</div>
-	</nav>
 
-	<ng-view></ng-view>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2019 Netwuk Software
+			</div>
+		</div>
+	</footer>
 
 	<script type="text/javascript" src="assets/js/materialize.js"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>

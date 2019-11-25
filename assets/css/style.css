@@ -1,3 +1,36 @@
 * {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+	padding: 5px 12px;
+}
+
+.page-footer {
+	text-align: center;
+}
+
+.item-row {
+	display: flex;
+	padding: 0 !important;
+}
+
+.item-row .thumb {
+	min-height: 240px;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #eee;
+}
+
+.item-image {
+	height: 400px;
 }

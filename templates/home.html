@@ -1,0 +1,25 @@
+<div>
+	<div ng-repeat="i in items" class="my-5">
+		<div class="card white row item-row">
+			<div ng-if="i.hi" class="col s4 thumb" ng-style="{'background-image': 'url(assets/images/'+i.id+'.jpg)'}"></div>
+			
+			<div ng-if="!i.hi" class="col s4 thumb">
+				<p class="center-align blue-grey-text text-darken-2 mt-20">
+					<i class="material-icons medium">image</i>
+					<br>
+					No Image
+				</p>
+			</div>
+			
+			<div class="col s8 relative">
+				<h5 class="mt-4 mb-2">{{i.name}}</h5>
+				<h6 class="grey-text mt-3">{{i.desc}}</h6>
+
+				<p class="absolute pin-b mb-5">
+					<button ng-click="openItem(i.id)" class="btn blue darken-2 mx-3"><i class="material-icons left">visibility</i>View</button>
+					<a target="_blank" ng-href="https://buy.paddle.com/product/{{i.pay}}" class="btn red lighten-1"><i class="material-icons left">shopping_cart</i>Buy for {{i.amt}}</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

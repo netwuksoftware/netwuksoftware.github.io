@@ -1,0 +1,18 @@
+<div class="card white p-5 mt-5">
+	<div class="center-align black">
+		<img ng-src="assets/images/{{i.id}}.jpg" class="item-image">
+	</div>
+
+	<div class="my-2">&nbsp;</div>
+	
+	<div class="row">
+		<div class="col s8">
+			<h5 class="mb-3 ml-4">{{i.name}}</h5>
+			<h6 class="grey-text ml-4">{{i.desc}}</h6>
+		</div>
+
+		<div class="col s4">
+			<a target="_blank" ng-href="https://buy.paddle.com/product/{{i.pay}}" class="btn-large red lighten-1 float-right"><i class="material-icons left">shopping_cart</i>Buy for {{i.amt}}</a>
+		</div>
+	</div>
+</div>
