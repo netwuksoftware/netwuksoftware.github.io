@@ -22,9 +22,15 @@
 					{{tag}}
 				</div>
 
-				<p class="absolute pin-b mb-5">
+				<p class="hide-on-small-only absolute pin-b mb-5">
 					<button ng-click="openItem(i.id)" class="btn blue darken-2 mx-3"><i class="material-icons left">visibility</i>View</button>
 					<a ng-click="confirmBuy(i.pay, i.name, i.amt)" class="btn red lighten-1"><i class="material-icons left">shopping_cart</i>Buy for {{i.amt}}</a>
+				</p>
+
+				<p class="hide-on-med-and-up">
+					<button ng-click="openItem(i.id)" class="btn blue darken-2 mx-3"><i class="material-icons left">visibility</i>View</button>
+					<br>
+					<a ng-click="confirmBuy(i.pay, i.name, i.amt)" class="m-3 my-4 btn red lighten-1"><i class="material-icons left">shopping_cart</i>Buy for {{i.amt}}</a>
 				</p>
 			</div>
 		</div>
